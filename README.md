@@ -1,6 +1,6 @@
 # Deploying `code-server` on AWS ec2 server
 
-This is the cloudFormation template is creating an Ubuntu EC2 instance and deploy code-server in the browser. You can use <a align="left"> </a> <a href="https://code.visualstudio.com/" target="_blank"> <img src="https://www.vectorlogo.zone/logos/visualstudio_code/visualstudio_code-icon.svg" alt="vscode" width="20" height="20"/> </a>   [VS Code](https://code.visualstudio.com) any machine including your ipad, iphone, android mobile devices, computer, etc.
+This is the cloudFormation template is creating an Ubuntu EC2 instance and deploy code-server in the browser. You can use <a align="left"> </a> <a href="https://code.visualstudio.com/" target="_blank"> <img src="https://www.vectorlogo.zone/logos/visualstudio_code/visualstudio_code-icon.svg" alt="vscode" width="17" height="17"/> </a>   [VS Code](https://code.visualstudio.com) any machine including your ipad, iphone, android mobile devices, computer, etc.
 
 <br></br>
 
