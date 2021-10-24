@@ -2,13 +2,8 @@ AWSTemplateFormatVersion: 2010-09-09
 
 Description: >
 
-  Template creates an Ubuntu EC2 instance and deploy code-server VS Code in the browser
-  Run VS Code on aws ubuntu ec2 server and access it in the browser and code on any device with a consistent development environment
-  https://github.com/cdr/deploy-code-server
-  https://github.com/cdr/deploy-code-server/blob/main/guides/aws-ec2.md
-  https://github.com/cdr/code-server
-
-
+  Template creates an Ubuntu EC2 instance and deploy code-server VS Code in the browser.
+  Run VS Code on aws ubuntu ec2 server and access it in the browser and code on any device with a consistent development environment.
 
 Parameters:
   KeyPairName:
