@@ -73,7 +73,7 @@ Once your instance starts, you can simply navigate to the public IP address and 
 
 **7. Select theme and open folder**
 
-<img src="https://github.com/kzs61/deploy-code-server-aws/docs/Create_a_CloudFromation_Stack.png" width="700" height="500">
+![Select_themes_and_open_folder](docs/Select_themes_and_open_folder.png?raw=true)
 
 
 - ### Original code and more information for deploying on AWS can be found here
