@@ -1,0 +1,116 @@
+AWSTemplateFormatVersion: 2010-09-09
+
+Description: >
+
+  Template creates an Ubuntu EC2 instance and deploy code-server VS Code in the browser
+  Run VS Code on aws ubuntu ec2 server and access it in the browser and code on any device with a consistent development environment
+  https://github.com/cdr/deploy-code-server
+  https://github.com/cdr/deploy-code-server/blob/main/guides/aws-ec2.md
+  https://github.com/cdr/code-server
+
+
+
+Parameters:
+  KeyPairName:
+    Description: Enter the name of your Key Pair for SSH connections.
+    Type: AWS::EC2::KeyPair::KeyName
+    ConstraintDescription: Must be one of the existing EC2 KeyPairs
+Resources:
+  GrantingRoleforCodeServer:
+    Type: "AWS::IAM::Role"
+    Properties:
+      AssumeRolePolicyDocument:
+        Statement:
+          - Effect: Allow
+            Principal:
+              Service:
+              - ec2.amazonaws.com
+            Action:
+              - 'sts:AssumeRole'
+      ManagedPolicyArns:
+        - arn:aws:iam::aws:policy/AWSCloudFormationFullAccess
+        - arn:aws:iam::aws:policy/AdministratorAccess
+  CodeServerEC2Profile:
+    Type: "AWS::IAM::InstanceProfile"
+    Properties:
+      Roles: #required
+        - !Ref GrantingRoleforCodeServer
+  CodeServerSecurityGroup:
+    Type: AWS::EC2::SecurityGroup
+    Properties:
+      GroupDescription: Enable SSH and HTTP for the Server
+      SecurityGroupIngress:
+        - IpProtocol: tcp
+          FromPort: 80
+          ToPort: 80
+          CidrIp: 0.0.0.0/0
+        - IpProtocol: tcp
+          FromPort: 22
+          ToPort: 22
+          CidrIp: 0.0.0.0/0
+  CodeServer:
+    Type: AWS::EC2::Instance
+    Properties:
+      # Ubuntu
+      ImageId: ami-09e67e426f25ce0d7
+      InstanceType: t2.micro
+      KeyName: !Ref KeyPairName
+      IamInstanceProfile: !Ref CodeServerEC2Profile
+      SecurityGroupIds:
+        - !GetAtt CodeServerSecurityGroup.GroupId
+      Tags:
+        - Key: Name
+          # Value: !Sub Code Server of ${AWS::StackName}
+          Value: !Sub ${AWS::StackName}-server
+        - Key: server
+          Value: vscode
+      UserData:
+        Fn::Base64: |
+          #! /bin/bash
+          # update os
+          yum update -y
+          # set server hostname as jenkins-server
+          hostnamectl set-hostname vscserver
+          # install git
+          yum install git -y
+
+          # uninstall aws cli version 1
+          rm -rf /bin/aws
+          # install aws cli version 2
+          curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"
+          unzip awscliv2.zip
+          ./aws/install
+          # install python 3
+          yum install python3 -y
+
+          # install boto3
+          pip3 install boto3
+
+          # install code-server service system-wide
+          export HOME=/root
+          curl -fsSL https://code-server.dev/install.sh | sh
+
+          # add our helper server to redirect to the proper URL for --link
+          git clone https://github.com/bpmct/coder-cloud-redirect-server
+          cd coder-cloud-redirect-server
+          cp coder-cloud-redirect.service /etc/systemd/system/
+          cp coder-cloud-redirect.py /usr/bin/
+
+          # create a code-server user
+          adduser --disabled-password --gecos "" coder
+          echo "coder ALL=(ALL:ALL) NOPASSWD: ALL" | sudo tee /etc/sudoers.d/coder
+          usermod -aG sudo coder
+
+          # copy ssh keys from root
+          cp -r /root/.ssh /home/coder/.ssh
+          chown -R coder:coder /home/coder/.ssh
+
+          # configure code-server to use --link with the "coder" user
+          mkdir -p /home/coder/.config/code-server
+          touch /home/coder/.config/code-server/config.yaml
+          echo "link: true" > /home/coder/.config/code-server/config.yaml
+          chown -R coder:coder /home/coder/.config
+
+          # start and enable code-server and our helper service
+          systemctl enable --now code-server@coder
+          systemctl enable --now coder-cloud-redirect
