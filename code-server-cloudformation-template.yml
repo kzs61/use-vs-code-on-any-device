@@ -55,8 +55,7 @@ Resources:
         - !GetAtt CodeServerSecurityGroup.GroupId
       Tags:
         - Key: Name
-          # Value: !Sub Code Server of ${AWS::StackName}
-          Value: !Sub ${AWS::StackName}-server
+          Value: !Sub ${AWS::StackName}
         - Key: server
           Value: vscode
       UserData:
