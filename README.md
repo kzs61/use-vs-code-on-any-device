@@ -88,11 +88,16 @@ _Once your instance starts, you can simply navigate to the public IP address and
 
 # Using VS Code on iPad
 
-https://github.com/kzs61/use-vs-code-on-any-device/blob/Master/caption/Clone_repo_from_github.mp4
+## Installing extensions
+https://user-images.githubusercontent.com/91105314/138700423-7083d1d8-de3a-4570-bd3d-75580922e1a3.mp4
 
-![installing_extensions](caption/Installing_extensions.mp4?raw=true)
+## Cloning repo
 
-![clone_repo](caption/Clone_repo_from_github.mp4?raw=true)
+
+https://user-images.githubusercontent.com/91105314/138700624-0b034ab9-0892-4d07-980b-437c7ddec09b.mp4
+
+
+
 
 
 <br></br>
