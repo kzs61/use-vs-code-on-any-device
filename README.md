@@ -84,6 +84,14 @@ _Once your instance starts, you can simply navigate to the public IP address and
 
 ![Select_themes_and_open_folder](img/Select_themes_and_open_folder.png?raw=true)
 
+<br></br>
+
+# Using VS Code on iPad
+
+![installing_extensions](caption/Installing_extensions.mp4?raw=true)
+
+![clone_repo](caption/Clone_repo_from_github.mp4?raw=true)
+
 
 <br></br>
 
