@@ -92,8 +92,6 @@ _Once your instance starts, you can simply navigate to the public IP address and
 https://user-images.githubusercontent.com/91105314/138700423-7083d1d8-de3a-4570-bd3d-75580922e1a3.mp4
 
 ## Cloning repo
-
-
 https://user-images.githubusercontent.com/91105314/138700624-0b034ab9-0892-4d07-980b-437c7ddec09b.mp4
 
 
