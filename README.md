@@ -10,7 +10,7 @@ This is the cloudFormation template is creating an Ubuntu EC2 instance and deplo
 
 ## 1. Select the desired AWS region where you want to create your ec2 server
 
-![Selecting_desired_AWS_Region.png](docs/Selecting_desired_AWS_Region.png?raw=true)
+![Selecting_desired_AWS_Region.png](img/Selecting_desired_AWS_Region.png?raw=true)
 
 
 _You will have to use an existing `key pair`. If you don't have one already, create a new key pair after selecting your desired AWS Region._
@@ -18,16 +18,16 @@ _You will have to use an existing `key pair`. If you don't have one already, cre
 
 ## 2. Create CloudFromation stack with new resources
 
-![Create_a_CloudFromation_Stack](docs/Create_a_CloudFromation_Stack.png?raw=true)
+![Create_a_CloudFromation_Stack](img/Create_a_CloudFromation_Stack.png?raw=true)
 <br></br>
 
 ## 3. Upload the CloudFromation template
 
-![Upload_the_CloudFormation_Template](docs/Upload_the_CloudFormation_Template.png?raw=true)
+![Upload_the_CloudFormation_Template](img/Upload_the_CloudFormation_Template.png?raw=true)
 <br></br>
 
 ## 4. Specify stack details
-![Specify_stack_details_stackName_KeyPairName](docs/Specify_stack_details_stackName_KeyPairName.png?raw=true)
+![Specify_stack_details_stackName_KeyPairName](img/Specify_stack_details_stackName_KeyPairName.png?raw=true)
 <br></br>
 
 _Name your new stack. You must have an existing `key pair` you have already created before. 
@@ -59,16 +59,16 @@ _Click_ `Next` _to move all the way the last step_ `Review` _without making any 
 
 ## 5. Review and create stack
 
-![Review_and_create_stack](docs/Review_and_create_stack.png?raw=true)
+![Review_and_create_stack](img/Review_and_create_stack.png?raw=true)
 <br></br>
 
 _After stack creation is complete check your ec2 console for your_ `vscode-server`
 <br></br>
 
-![Stack_created](docs/Stack_created.png?raw=true)
+![Stack_created](img/Stack_created.png?raw=true)
 <br></br>
 
-![Ec2_instance_created](docs/Ec2_instance_created.png?raw=true)
+![Ec2_instance_created](img/Ec2_instance_created.png?raw=true)
 <br></br>
 
 
@@ -77,12 +77,12 @@ _After stack creation is complete check your ec2 console for your_ `vscode-serve
 _Once your instance starts, you can simply navigate to the public IP address and get forwarded to a secure version of code-server, which will be proxied behind your GitHub account (the first one you log in with). Login to your GitHub account. For information on how this works, see_ [code-server](https://github.com/cdr/code-server#cloud-program-%EF%B8%8F)
 <br></br>
 
-![Navigate_the_server](docs/Navigate_the_server.png?raw=true)
+![Navigate_the_server](img/Navigate_the_server.png?raw=true)
 <br></br>
 
 ## 7. Select a theme and open folder
 
-![Select_themes_and_open_folder](docs/Select_themes_and_open_folder.png?raw=true)
+![Select_themes_and_open_folder](img/Select_themes_and_open_folder.png?raw=true)
 
 
 <br></br>
