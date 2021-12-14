@@ -1,4 +1,4 @@
-# Deploying `code-server` on AWS ec2 server
+# Deploying `code-server` on AWS ec2 server using AWS CloudFormation Template
 
 This is the cloudFormation template is creating an Ubuntu EC2 instance and deploy code-server in the browser. You can use <a align="left"> </a> <a href="https://code.visualstudio.com/" target="_blank"> <img src="https://www.vectorlogo.zone/logos/visualstudio_code/visualstudio_code-icon.svg" alt="vscode" width="15" height="15"/> </a>   [VS Code](https://code.visualstudio.com) any machine including your ipad, iphone, android mobile devices, computer, etc.
 
@@ -91,7 +91,7 @@ _Once your instance starts, you can simply navigate to the public IP address and
 ## Installing extensions
 https://user-images.githubusercontent.com/91105314/138700423-7083d1d8-de3a-4570-bd3d-75580922e1a3.mp4
 
-## Cloning repo
+## Cloning
 https://user-images.githubusercontent.com/91105314/138700624-0b034ab9-0892-4d07-980b-437c7ddec09b.mp4
 
 
