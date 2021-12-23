@@ -110,7 +110,6 @@ See the [troubleshooting guide](../deploy-vm#troubleshooting) if you are unable 
 
 [Deploying code-server on various cloud platforms](https://github.com/cdr/deploy-code-server)
 ##
-
 <br></br>
 
 ## Or, just use GitHub web-based editor without using any other tool except your web browser
@@ -123,7 +122,6 @@ You can open any GitHub repository in the web-based editor in either of the foll
 
 - Press . while browsing any repository or pull request on GitHub.
 - Change the URL from "github.com" to "github.dev".
-
 
 <br></br>
 
