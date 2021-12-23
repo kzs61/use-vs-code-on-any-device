@@ -113,7 +113,7 @@ See the [troubleshooting guide](../deploy-vm#troubleshooting) if you are unable 
 
 
 <br></br>
-
+##
 
 ## Or, just use GitHub web-based editor without using any other tool except your web browser
 
@@ -138,4 +138,4 @@ You can open any GitHub repository in the web-based editor in either of the foll
 
 <a href="https://www.gnu.org/software/bash/" target="_blank"> <img src="https://www.vectorlogo.zone/logos/gnu_bash/gnu_bash-icon.svg" alt="bash" width="40" height="40"/></a> 
 
-<a href="https://docs.github.com/en/codespaces/the-githubdev-web-based-editor" target="_blank"> <img src="https://www.vectorlogo.zone/logos/github/github-icon.svg" alt="github.dev" width="40" height="40"/> </a> 
+<a href="https://docs.github.com/en/codespaces/the-githubdev-web-based-editor" target="_blank"> <img src="https://www.vectorlogo.zone/logos/github/github-icon.svg" alt="github.dev" width="50" height="50"/> </a> 
