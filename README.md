@@ -115,11 +115,11 @@ See the [troubleshooting guide](../deploy-vm#troubleshooting) if you are unable 
 <br></br>
 
 
-## Or, just use GitHub web-based editor without using any other tool
+## Or, just use GitHub web-based editor without using any other tool except your web browser
 
 [The web-based editor](https://docs.github.com/en/codespaces/the-githubdev-web-based-editor) introduces a lightweight editing experience that runs entirely in your browser.
 
-Opening the web-based editor:
+#### Opening the web-based editor:
 
 You can open any GitHub repository in the web-based editor in either of the following ways:
 
