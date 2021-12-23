@@ -109,10 +109,9 @@ Some additional lines added to user data in this CloudFromation template which i
 See the [troubleshooting guide](../deploy-vm#troubleshooting) if you are unable to connect after some time.
 
 [Deploying code-server on various cloud platforms](https://github.com/cdr/deploy-code-server)
-
+##
 
 <br></br>
-##
 
 ## Or, just use GitHub web-based editor without using any other tool except your web browser
 
