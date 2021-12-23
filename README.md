@@ -110,14 +110,14 @@ See the [troubleshooting guide](../deploy-vm#troubleshooting) if you are unable 
 
 [Deploying code-server on various cloud platforms](https://github.com/cdr/deploy-code-server)
 ##
-<br>
+<br></br>
 
 ## Or, just use GitHub web-based editor without using any other tool except your web browser
-<br>
+
 [The web-based editor](https://docs.github.com/en/codespaces/the-githubdev-web-based-editor) introduces a lightweight editing experience that runs entirely in your browser.
 
 #### Opening the web-based editor:
-
+##
 You can open any GitHub repository in the web-based editor in either of the following ways:
 
 - Press . while browsing any repository or pull request on GitHub.
