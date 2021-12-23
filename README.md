@@ -137,3 +137,5 @@ You can open any GitHub repository in the web-based editor in either of the foll
 <a href="https://aws.amazon.com/cloudformation/" target="_blank"> <img src="https://www.vectorlogo.zone/logos/amazon_cloudformation/amazon_cloudformation-icon.svg" alt="aws" width="40" height="40"/> </a> 
 
 <a href="https://www.gnu.org/software/bash/" target="_blank"> <img src="https://www.vectorlogo.zone/logos/gnu_bash/gnu_bash-icon.svg" alt="bash" width="40" height="40"/></a> 
+
+<a href="https://docs.github.com/en/codespaces/the-githubdev-web-based-editor" target="_blank"> <img src="https://www.vectorlogo.zone/logos/github/github-icon.svg" alt="github.dev" width="40" height="40"/> </a> 
