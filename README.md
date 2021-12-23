@@ -112,6 +112,23 @@ See the [troubleshooting guide](../deploy-vm#troubleshooting) if you are unable 
 
 
 
+<br></br>
+
+
+## Or, just open any GitHub repository in the web-based editor without using any other tool
+
+[Use the github.dev web-based editor from your repository or pull request to create and commit changes] (https://docs.github.com/en/codespaces/the-githubdev-web-based-editor)
+
+Opening the web-based editor:
+
+You can open any GitHub repository in the web-based editor in either of the following ways:
+
+- Press . while browsing any repository or pull request on GitHub.
+- Change the URL from "github.com" to "github.dev".
+
+
+<br></br>
+
 ## 
 <br>
 
