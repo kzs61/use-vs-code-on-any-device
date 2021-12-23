@@ -116,8 +116,9 @@ See the [troubleshooting guide](../deploy-vm#troubleshooting) if you are unable 
 
 [The web-based editor](https://docs.github.com/en/codespaces/the-githubdev-web-based-editor) introduces a lightweight editing experience that runs entirely in your browser.
 
+
 #### Opening the web-based editor:
-##
+
 You can open any GitHub repository in the web-based editor in either of the following ways:
 
 - Press . while browsing any repository or pull request on GitHub.
