@@ -111,7 +111,6 @@ See the [troubleshooting guide](../deploy-vm#troubleshooting) if you are unable 
 [Deploying code-server on various cloud platforms](https://github.com/cdr/deploy-code-server)
 
 
-
 <br></br>
 ##
 
