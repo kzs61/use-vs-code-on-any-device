@@ -31,7 +31,7 @@ _You will have to use an existing `key pair`. If you don't have one already, cre
 <br></br>
 
 _Name your new stack. You must have an existing `key pair` you have already created before. 
-Instance name will be the stack name you give. Please refer the template for instance properties/Tags._
+Instance name will be the stack name you give. Please refer the [CloudFormation Template](https://github.com/kzs61/use-vs-code-on-any-device-aws-cloudformation/blob/Master/code-server-cloudformation-template.yml) of this project for the EC2 Instance properties/Tags._
 <br></br>
 
 ```
