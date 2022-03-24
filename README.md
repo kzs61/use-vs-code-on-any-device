@@ -1,4 +1,4 @@
-# Deploying `code-server` on AWS ec2 server using AWS CloudFormation Template
+# Deploying [code-server](https://github.com/coder/code-server) ([Visual Studio Code](https://code.visualstudio.com/)) on AWS Ubuntu EC2 server using AWS [CloudFormation Template](https://github.com/kzs61/use-vs-code-on-any-device-aws-cloudformation/blob/Master/code-server-cloudformation-template.yml)
 
 This is the [CloudFormation Template](https://github.com/kzs61/use-vs-code-on-any-device-aws-cloudformation/blob/Master/code-server-cloudformation-template.yml) for creating an Ubuntu EC2 instance and deploy code-server in the browser. You can use <a align="left"> </a> <a href="https://code.visualstudio.com/" target="_blank"> <img src="https://www.vectorlogo.zone/logos/visualstudio_code/visualstudio_code-icon.svg" alt="vscode" width="15" height="15"/> </a>   [VS Code](https://code.visualstudio.com) any machine including your ipad, iphone, android mobile devices, computer, etc.
 
