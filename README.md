@@ -112,7 +112,7 @@ See the [troubleshooting guide](../deploy-vm#troubleshooting) if you are unable 
 ##
 <br></br>
 
-## Or, just use GitHub web-based editor without using any other tool except your web browse (Lightweight editing only)
+## Or, just use GitHub web-based editor without using any other tool except your web browser (Lightweight editing only)
 
 [The web-based editor](https://docs.github.com/en/codespaces/the-githubdev-web-based-editor) introduces a lightweight editing experience that runs entirely in your browser.
 
